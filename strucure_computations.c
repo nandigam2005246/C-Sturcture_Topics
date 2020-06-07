@@ -23,31 +23,43 @@ int main ()
 
     struct Subject *ptr;
     struct Student *ptr1;
-
-    int i;
     ptr=&sub;
     ptr1=&stu;
 
     printf ("size of struct is %d\n",sizeof(struct Student));
 
-    printf ("Enter the Name of the Student:");
+
+    printf ("Enter the Name of the Student:\n");
     scanf ("%s",ptr1->name);
 
 
-    ptr->maths=100;
-    ptr->english=98;
+
+    /*
+	  User Defined Input
+    */
+
+
+    printf ("Enter the Maths Marks:\n");
+    scanf ("%f",&ptr->maths);
+
+    printf ("Enter the English Marks:\n");
+    scanf ("%f",&ptr->english);
 
     printf ("Marks in Maths is %.2f\n",ptr->maths);
     printf ("Marks in English is %.2f\n",ptr->english);
 
-    ptr1->score =ptr->maths+ptr->english;
 
+
+
+
+
+
+    ptr1->score =ptr->maths+ptr->english;
     printf ("The total score of student in all subject is %.2f\n",ptr1->score);
 
-    return 0;
+
+
+
+  return 0;
 }
-
-
-
-
 
