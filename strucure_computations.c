@@ -26,11 +26,11 @@ int main ()
     ptr=&sub;
     ptr1=&stu;
 
-    printf ("size of struct is %d\n",sizeof(struct Student));
+    printf ("size of struct is %ld\n",sizeof(struct Student));
 
 
     printf ("Enter the Name of the Student:\n");
-    scanf ("%s",ptr1->name);
+    scanf ("%4s",ptr1->name);
 
 
 
